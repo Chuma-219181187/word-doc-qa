@@ -401,7 +401,3 @@ regex = "1"                  # Text processing
 - [ ] Web API interface
 - [ ] Batch inference
 - [ ] Model quantization
-
-## Author
-
-By Chuma Nxazonke
