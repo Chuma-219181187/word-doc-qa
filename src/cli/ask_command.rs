@@ -1,6 +1,6 @@
 use std::path::Path;
 use crate::data::DocumentLoader;
-use crate::inference::{AnswerEngine, QuestionProcessor};
+use crate::inference::AnswerEngine;
 
 pub struct AskCommand;
 

@@ -18,7 +18,7 @@ impl TransformerEncoder {
         num_layers: usize,
         ffn_dim: usize,
         dropout: f32,
-        max_seq_length: usize,
+        _max_seq_length: usize,
     ) -> Self {
         let embeddings = Embedding::new(vocab_size, embedding_dim);
 

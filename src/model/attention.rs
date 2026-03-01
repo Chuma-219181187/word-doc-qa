@@ -19,12 +19,12 @@ impl MultiHeadAttention {
 
     pub fn forward(
         &self,
-        query: Vec<Vec<f32>>,
-        key: Vec<Vec<f32>>,
-        value: Vec<Vec<f32>>,
-        attention_mask: Option<Vec<Vec<f32>>>,
+        _query: Vec<Vec<f32>>,
+        _key: Vec<Vec<f32>>,
+        _value: Vec<Vec<f32>>,
+        _attention_mask: Option<Vec<Vec<f32>>>,
     ) -> Vec<Vec<f32>> {
         // Simple pass-through for demo
-        value
+        _value
     }
 }

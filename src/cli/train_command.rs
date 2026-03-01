@@ -25,7 +25,7 @@ impl TrainCommand {
 
         // Load documents
         println!("\nLoading documents from: {:?}", data_dir);
-        let mut documents = DocumentLoader::load_documents(data_dir)?;
+        let documents = DocumentLoader::load_documents(data_dir)?;
         println!("Loaded {} documents", documents.len());
 
         if documents.is_empty() {
@@ -50,7 +50,7 @@ println!("Loaded {} documents", documents.len());
 
         let tokenizer = Tokenizer::new(30000, model_config.max_seq_length);
 
-        for (doc_idx, doc) in documents.iter().enumerate() {
+        for (_doc_idx, doc) in documents.iter().enumerate() {
             let cleaned = TextCleaner::clean(doc);
             let chunks = TextCleaner::split_into_chunks(&cleaned, data_config.chunk_size);
 

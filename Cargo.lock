@@ -7209,7 +7209,9 @@ dependencies = [
  "regex",
  "serde",
  "serde_json",
+ "tempfile",
  "tokenizers",
+ "zip 0.6.6",
 ]
 
 [[package]]

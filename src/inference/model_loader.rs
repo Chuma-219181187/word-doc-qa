@@ -1,4 +1,3 @@
-use crate::model::QAModel;
 use std::path::Path;
 
 pub struct ModelLoader;

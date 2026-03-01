@@ -2,23 +2,19 @@
 
 A complete machine learning question answering system built in Rust using a Transformer-based architecture. The system reads Word documents (.docx), trains a neural network model, and answers natural language questions about document content.
 
+## 📄 Documentation
+
+📖 **[View Project Report](docs/Project_Report%20.pdf)** - Complete technical documentation and project analysis
+
 ## Project Overview
 
-### Architecture
 
-**Transformer-based QA Model**
-- **Embedding Dimension**: 512
-- **Hidden Size**: 512
-- **Attention Heads**: 8
-- **Encoder Layers**: 6
-- **Feedforward Dimension**: 2048
-- **Dropout Rate**: 0.1
-- **Max Sequence Length**: 512 tokens
 
 ### System Components
 
 #### 1. Data Pipeline (`src/data/`)
 - `document_loader.rs`: Loads and parses .docx files
+- `calendar_parser.rs`: Extracts calendar dates and events from documents
 - `text_cleaner.rs`: Cleans text, removes special characters, splits into chunks
 - `tokenizer.rs`: Converts text to tokens with attention masks
 - `dataset.rs`: Creates train/validation splits
@@ -150,6 +146,7 @@ word-doc-qa/
 │   ├── data/
 │   │   ├── mod.rs                      # Data module
 │   │   ├── document_loader.rs          # DOCX parsing
+│   │   ├── calendar_parser.rs          # Calendar parsing
 │   │   ├── text_cleaner.rs             # Text preprocessing
 │   │   ├── tokenizer.rs                # Tokenization
 │   │   ├── dataset.rs                  # Dataset management

@@ -68,7 +68,7 @@ impl Trainer {
         Ok(())
     }
 
-    fn simulate_epoch_loss(&self, examples: &[QAExample], epoch: usize) -> f32 {
+    fn simulate_epoch_loss(&self, _examples: &[QAExample], epoch: usize) -> f32 {
         let base_loss = 3.0;
         let decay = 0.1 * (epoch as f32 + 1.0);
         (base_loss - decay).max(0.1)

@@ -67,7 +67,7 @@ mod tests {
 
     #[test]
     fn test_dataset_operations() {
-        let mut dataset = Dataset::new();
+        let dataset = Dataset::new();
         assert_eq!(dataset.size(), 0);
     }
 }

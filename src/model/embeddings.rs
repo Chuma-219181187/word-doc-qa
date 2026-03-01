@@ -17,7 +17,7 @@ impl Embedding {
     pub fn forward(&self, input_ids: Vec<u32>) -> Vec<Vec<f32>> {
         input_ids
             .iter()
-            .map(|id| {
+            .map(|_id| {
                 vec![0.1; self.embedding_dim]
             })
             .collect()
