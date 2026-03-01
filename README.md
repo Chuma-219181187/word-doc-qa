@@ -4,7 +4,7 @@ A complete machine learning question answering system built in Rust using a Tran
 
 ## 📄 Documentation
 
-📖 **[View Project Report](docs/Project_Report%20.pdf)** - Complete technical documentation and project analysis
+📖 **[View Project Report](docs/Project_Report.pdf)** - Complete technical documentation and project analysis
 
 ## Project Overview
 
